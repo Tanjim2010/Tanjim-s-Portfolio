@@ -1,0 +1,20 @@
+/* Add this to your styles file (e.g., BannerText.css) */
+@keyframes spinBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Initially, set animation to paused */
+.animate-spin-slow {
+    animation: spinBorder 10s linear infinite;
+    animation-play-state: paused; /* Set animation to paused initially */
+}
+
+/* Start the animation when hovered */
+.relative.inline-block:hover .animate-spin-slow {
+    animation-play-state: running; /* Start the animation when hovering */
+}
