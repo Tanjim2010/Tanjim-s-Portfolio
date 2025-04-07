@@ -6,11 +6,11 @@ import './navbar.css';
 
 const Navbar = () => {
     const links = <>
-        <li><Link className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' to={'/'}>Home</Link></li>
-        <li><Link className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' to={'/about-me'}>About Me</Link></li>
-        <li><Link className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' to={'my-skills'}>My Skills</Link></li>
-        <li><Link className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' to={'my-projects'}>My Projects</Link></li>
-        <li><Link className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' to={'contact'}>Contact Me</Link></li>
+        <li><a className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' href='#'>Home</a></li>
+        <li><a className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' href='#about-me'>About Me</a></li>
+        <li><a className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' href='#my-skill'>My Skills</a></li>
+        <li><a className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' href='my-projects'>My Projects</a></li>
+        <li><a className='lg:px-5 px-2 py-2 hover:bg-[#c9c8c85f] rounded-sm' href='contact'>Contact Me</a></li>
     </>;
 
     return (

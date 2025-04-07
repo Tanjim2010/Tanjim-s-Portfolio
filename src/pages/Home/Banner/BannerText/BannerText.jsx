@@ -57,16 +57,19 @@ export default function BannerText() {
                     </span> <br />
                     <span className="flex gap-5 mt-4">
                         <div className="relative inline-block cursor-pointer">
-                            <Link><div className="tooltip" data-tip="Visit My Facebook">
+                            <Link to={'https://www.facebook.com/profile.php?id=61551814694251'}><div className="tooltip" data-tip="Visit My Facebook">
                                 <div className="absolute inset-0 border-4 border-dashed border-text-color rounded-full animate-spin-slow"></div>
                                 <FaFacebook className="text-5xl p-2 rounded-full bg-white hover:scale-110 transition-all" />
                             </div></Link>
                         </div>
                         <div className="relative inline-block cursor-pointer">
-                            <div className="tooltip" data-tip="Visit My Github">
-                                <div className="absolute inset-0 border-4 border-dashed border-text-color rounded-full animate-spin-slow"></div>
-                                <FaGithub className="text-5xl  p-2 rounded-full bg-white hover:scale-110 transition-all" />
-                            </div>
+                            <Link to={'https://github.com/Tanjim2010'}>
+                                <div className="tooltip" data-tip="Visit My Github">
+                                    <div className="absolute inset-0 border-4 border-dashed border-text-color rounded-full animate-spin-slow"></div>
+                                    <FaGithub className="text-5xl  p-2 rounded-full bg-white hover:scale-110 transition-all" />
+                                </div>
+                            </Link>
+
                         </div>
                         <div className="relative inline-block cursor-pointer">
                             <div className="tooltip" data-tip="Visit My LinkIn">
