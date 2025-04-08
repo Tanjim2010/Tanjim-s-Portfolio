@@ -72,7 +72,7 @@ const Contact = () => {
     };
 
     return (
-        <section ref={containerRef} className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color">
+        <section id="contact" ref={containerRef} className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Contact Me</h2>
 
             <div className="grid md:grid-cols-2 gap-10 px-6 md:px-12">

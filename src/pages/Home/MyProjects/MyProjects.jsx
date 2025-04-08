@@ -35,7 +35,7 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <section className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color">
+    <section id="my-projects" className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">My Projects</h2>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8 mx-auto">

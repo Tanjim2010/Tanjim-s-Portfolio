@@ -1,0 +1,19 @@
+/* Add this to your styles file (e.g., index.css) */
+@keyframes spinBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply slow rotation only on border */
+.animate-spin-slow {
+    animation: spinBorder 10s linear infinite;
+}
+
+/* Ensure the image container is not affected by hover */
+.image-container:hover .image {
+    transform: none; /* Remove any hover effect on the image */
+}
