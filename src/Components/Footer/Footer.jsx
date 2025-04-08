@@ -14,7 +14,7 @@ const Footer = () => {
               <img className='w-[80px] hover:w-[78px] rounded-full p-1 image' src='https://i.ibb.co.com/d4BwfDTP/Adobe-Express-file.png' alt="" />
             </div>
           </Link>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <p>Copyright © {new Date().getFullYear()} Md Tanjim Hossen All right reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a href="https://x.com/MdTanjimHossen">
