@@ -106,7 +106,7 @@ const ProjectDetailPage = () => {
     }
 
     return (
-        <div className="max-w-7xl mx-auto md:px-6 px-0 space-y-8 mb-20">
+        <div className="max-w-7xl mx-auto px-3 md:px-0 space-y-8 mb-20">
             <Link className="my-3" to={'/'}><Button className={'my-5 flex  items-center justify-center gap-3'} type={'outline'}><FaArrowLeft /> Back to Home</Button></Link>
             <img
                 src={project.image}
