@@ -5,7 +5,6 @@ import SkillsSection from './HomeSkills/SkillsSection';
 import MyProjects from './MyProjects/MyProjects';
 import Contact from './Contact/Contact';
 import Navbar from '../../Components/Navbar/Navbar';
-import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -22,9 +21,7 @@ const Home = () => {
                     <Contact></Contact>
                 </div>
             </div>
-            <div className="sticky top-0 z-50 bg-background max-w-[1290px] mx-auto">
-                <Footer></Footer>
-            </div>
+           
 
         </div>
     );
