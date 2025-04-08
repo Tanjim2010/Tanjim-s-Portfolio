@@ -11,7 +11,7 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        AOS.init({ duration: 800, once: false });
+        AOS.init({ duration: 1000, once: true }); // একবারই অ্যানিমেশন হবে
     }, []);
 
     const handleSubmit = (e) => {
@@ -23,7 +23,7 @@ const Contact = () => {
                 "service_s8zsx6a",
                 "template_ojy5ezi",
                 form.current,
-                "9w2lD5LUpWI15kQzb" 
+                "9w2lD5LUpWI15kQzb"
             )
             .then(
                 (result) => {
@@ -40,12 +40,15 @@ const Contact = () => {
     };
 
     return (
-        <section className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color">
+        <section
+            className="py-14 mb-20 mx-3 bg-[#FBF8EF] rounded-2xl border-2 border-border-color"
+            data-aos="fade-up"  // স্ক্রল করার সময় আউটোমেটিক ফেড ইন হবে
+        >
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Contact Me</h2>
 
             <div className="grid md:grid-cols-2 gap-10 px-6 md:px-12">
                 {/* Email Form */}
-                <div data-aos="fade-right">
+                <div data-aos="fade-right">  {/* Add AOS animation */}
                     <h3 className="text-xl font-semibold mb-6">Email Me</h3>
 
                     {isSent && (
@@ -93,7 +96,7 @@ const Contact = () => {
                 </div>
 
                 {/* Contact Info */}
-                <div data-aos="fade-left">
+                <div data-aos="fade-left">  {/* Add AOS animation */}
                     <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                     <ul className="space-y-5 text-lg">
                         <li className="flex items-center gap-3">
@@ -122,5 +125,6 @@ const Contact = () => {
         </section>
     );
 };
+
 
 export default Contact;
