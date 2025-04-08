@@ -10,19 +10,19 @@ const projects = [
     title: "HostelHub",
     image: "https://i.ibb.co.com/HpM6VtyS/hostel-hub.png",
     live: "https://assignment-12-499f2.web.app/",
-    detailsLink: "/projects/hostelhub",
+    detailPageTitle: "/project/hostelhub",
   },
   {
     title: "Visa Navigator",
     image: "https://i.ibb.co.com/rfqLQWsG/visa-navigator.png",
     live: "https://visa-navigator-client-three.vercel.app/",
-    detailsLink: "/projects/visa-navigator",
+    detailPageTitle: "/project/visa-navigator",
   },
   {
     title: "Tour Nest",
     image: "https://i.ibb.co.com/5p59qkj/Tour-nest.png",
-    live: "https://modern-hotel-booking-platform.web.app/",
-    detailsLink: "/projects/tour-nest",
+    live: "https://tour-nest-a8f37.web.app/",
+    detailPageTitle: "/project/tour-nest",
   },
 ];
 
@@ -64,7 +64,7 @@ const MyProjects = () => {
               >
                 Live Preview <FaExternalLinkAlt className="ml-2" />
               </a>
-              <Link to={project.detailsLink} className="w-full sm:w-auto">
+              <Link to={project.detailPageTitle} className="w-full sm:w-auto">
                 <Button type="outline" className="w-full">
                   See Details
                 </Button>
