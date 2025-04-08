@@ -7,7 +7,7 @@ const AboutMe = () => {
     const isInView = useInView(aboutMeRef, { once: true }); // স্ক্রল করার পর একবার animation হবে
 
     return (
-        <div id="about-me">
+        <div id="about-me" className="px-3">
             <motion.div
                 ref={aboutMeRef}
                 className="md:p-10 p-4 mt-10 border-2 rounded-2xl border-[#FFB433] bg-[#FBF8EF]"
@@ -57,7 +57,7 @@ const AboutMe = () => {
                     <div className="lg:w-1/2 w-full flex justify-center lg:justify-end items-end">
                         <div className='p-4 rounded-2xl border-t-4 border max-w-[240px] border-text-color bg-[#B4EBE6] mt-3'>
                             <div>
-                                <img className='md:h-[200px] object-cover border-3 border-border-color md:w-[200px] mx-auto rounded-full'
+                                <img className='h-[200px] object-cover border-3 border-border-color w-[200px] mx-auto rounded-full'
                                     src="https://i.ibb.co.com/n87FFTTk/tanjim-enhanced-image.png" alt="" />
                             </div>
                             <div className='mt-3 text-center'>

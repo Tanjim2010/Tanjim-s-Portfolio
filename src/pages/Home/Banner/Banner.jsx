@@ -54,18 +54,18 @@ const Banner = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="flex flex-col pt-5 pb-10 md:flex-row w-full gap-7 h-full invisible">
+        <div ref={containerRef} className="flex px-3 flex-col pt-5 pb-10 md:flex-row w-full gap-7 h-full invisible">
             <div className="md:w-1/2 w-full flex flex-col z-30 justify-center bg-[#FBF8EF] border-2 border-[#FFB433] px-5 rounded-2xl">
                 <BannerText />
             </div>
             {/* Image Section */}
             <div className="md:w-1/2 w-full relative bg-[#FBF8EF] border-2 border-border-color rounded-2xl md:h-[500px] h-[400px] flex rounded-tl-none rounded-br-none justify-center items-center">
                 {/* Rotating Border Effect */}
-                <div className="relative lg:w-[370px] md:w-[250px] md:h-[250px] w-[180px] h-[180px] lg:h-[370px] flex justify-center items-center">
+                <div className="relative lg:w-[370px] md:w-[250px] md:h-[250px] w-[230px] h-[230px] lg:h-[370px] flex justify-center items-center">
                     <div className="absolute w-full h-full border-[6px] border-dashed border-[#FFB433] rounded-full animate-spin-slow"></div>
                     <img
                         ref={imageRef}
-                        className="relative p-1 md:w-[250px] md:h-[250px] rounded-full lg:h-[366px] h-[180px] w-[180px] lg:w-[366px] object-cover"
+                        className="relative p-1 md:w-[250px] md:h-[250px] rounded-full lg:h-[366px] h-[230px] w-[230px] lg:w-[366px] object-cover"
                         src="https://i.ibb.co.com/n87FFTTk/tanjim-enhanced-image.png"
                         alt="Profile"
                     />

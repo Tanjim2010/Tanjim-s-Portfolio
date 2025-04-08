@@ -34,7 +34,7 @@ const SkillsSection = () => {
     const isInView = useInView(ref, { once: true }); // স্ক্রল করলে একবার animation চলবে
 
     return (
-        <div id="my-skill" ref={ref} className=" bg-[#FBF8EF] border-2 border-border-color text-center rounded-2xl my-20 overflow-hidden">
+        <div id="my-skill" ref={ref} className="mx-3 bg-[#FBF8EF] border-2 border-border-color text-center rounded-2xl my-20 overflow-hidden">
             <div className="py-10">
                 <h2 className="text-4xl font-bold mb-5">My Skills</h2>
                 <p className="text-lg  mb-10">These are the technologies I work with.</p>

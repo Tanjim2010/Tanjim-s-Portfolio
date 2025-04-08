@@ -14,7 +14,7 @@ const Navbar = () => {
     </>;
 
     return (
-        <div className='flex justify-between items-center pt-10 pb-5'>
+        <div className='flex justify-between items-center pt-10 pb-5 px-3'>
             <div>
                 <Link to={'/'} className='hidden md:block animate__animated animate__bounceInDown'>
                     <div className="relative inline-block">
@@ -38,7 +38,7 @@ const Navbar = () => {
                 {links}
             </ul>
 
-            <div className="tooltip" data-tip="Download Resume">
+            <div className="md:tooltip" data-tip="Download Resume">
                 <Button className={'animate__animated animate__pulse animate__infinite'} type={'outline'}>Resume</Button>
             </div>
         </div>

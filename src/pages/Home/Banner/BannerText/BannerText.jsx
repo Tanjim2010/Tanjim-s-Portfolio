@@ -9,10 +9,6 @@ import { Link } from "react-router-dom";
 export default function BannerText() {
     const containerRef = useRef(null);
 
-    const handleType = (count) => {
-        console.log(count);
-    };
-
     const handleDone = () => {
         console.log("Done after 5 loops!");
     };
@@ -52,7 +48,6 @@ export default function BannerText() {
                             deleteSpeed={100}
                             delaySpeed={3000}
                             onLoopDone={handleDone}
-                            onType={handleType}
                         />
                     </span> <br />
                     <span className="flex gap-5 mt-4">
