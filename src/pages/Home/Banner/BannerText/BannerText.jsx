@@ -82,7 +82,17 @@ export default function BannerText() {
                         </div>
                     </span>
                 </h1>
-                <Button className={'my-4'} type={'outline'}>Download Resume</Button>
+                <a
+                    href="https://drive.google.com/uc?export=download&id=1mERSK7AC39aiM3CdYzXv68txD6zMwW6V"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button className="my-4" type="outline">
+                        Download Resume
+                    </Button>
+                </a>
+
             </div>
         </div>
     );

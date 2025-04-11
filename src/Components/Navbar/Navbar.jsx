@@ -38,9 +38,18 @@ const Navbar = () => {
                 {links}
             </ul>
 
-            <div className="md:tooltip" data-tip="Download Resume">
-                <Button className={'animate__animated animate__pulse animate__infinite'} type={'outline'}>Resume</Button>
+            <div className="md:tooltip" data-tip="See Resume">
+                <a
+                    href="https://drive.google.com/file/d/1mERSK7AC39aiM3CdYzXv68txD6zMwW6V/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button className={'animate__animated animate__pulse animate__infinite'} type={'outline'}>
+                        Resume
+                    </Button>
+                </a>
             </div>
+
         </div>
     );
 };
